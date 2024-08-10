@@ -1,0 +1,24 @@
+* {
+    background-color: rgba(184, 18, 109, 0.31);
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    text-align: right;
+}
+
+ul div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+li.metricas {
+    border-color: blue;
+    font-weight: bold;
+    padding: 1em 2em;
+}
