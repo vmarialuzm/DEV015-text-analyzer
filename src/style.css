@@ -1,24 +1,60 @@
 * {
     background-color: rgba(184, 18, 109, 0.31);
+    font-family: 'Times New Roman', Times, serif;
 }
+
+/* body {
+    background-color: white;
+} */
 
 header {
     text-align: center;
+    padding: 5px;
+    margin: 20px;
 }
 
 footer {
+    background-color: white;
     text-align: right;
+}
+
+ul {
+    padding: 0;
+    margin: 20px;
 }
 
 ul div {
     display: flex;
-    align-items: center;
     justify-content: space-around;
     list-style: none;
 }
 
 li.metricas {
-    border-color: blue;
+    width: 200px;
+    height: 20px;
+    text-align: left;
+    border: 2px solid blue;
+    background-color: aqua;
     font-weight: bold;
     padding: 1em 2em;
+    margin: 5px;
+}
+
+textarea[name="user-input"] {
+    background-color: white;
+    width: 300px;
+    height: 50px;
+    padding: 1em 2em;
+    margin: 20px 500px;
+}
+
+button#reset-button {
+    font-size: 16px;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: chartreuse;
+    color: white;
+    margin: 20px 600px;
 }
