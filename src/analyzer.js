@@ -3,12 +3,12 @@ const analyzer = {
   getWordCount: (text) => {
     //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
     let count = 0;
-    const words = text.split(' ');
+    const words = text.trim().split(' ');
 
     for (let i = 0; i < words.length; i++) {
       count += 1
     }
-    console.log("getWordCount", count)
+    return count
   },
 
   getCharacterCount: (text) => {
@@ -18,7 +18,7 @@ const analyzer = {
     for (let i = 0; i < text.length; i++) {
       count += 1
     }
-    console.log("getCharacterCount", count)
+    return count
   },
   
   getCharacterCountExcludingSpaces: (text) => {
@@ -29,7 +29,7 @@ const analyzer = {
     for (let i = 0; i < text.length; i++) {
       count += 1
     }
-    console.log("getCharacterCountExcludingSpaces", count)
+    return count
   },
   
   getAverageWordLength: (text) => {    
@@ -50,7 +50,7 @@ const analyzer = {
       sum_long_words += long_word
     }
     average_words = sum_long_words/count_words
-    console.log("getAverageWordLength", average_words.toFixed(2))
+    return average_words.toFixed(2)
   },
 
   getNumberCount: (text) => {
@@ -63,7 +63,7 @@ const analyzer = {
         count_number += 1
       }
     }
-    console.log("getNumberCount", count_number)
+    return count_number
   },
 
   getNumberSum: (text) => {
@@ -78,7 +78,7 @@ const analyzer = {
         sum_number += parseInt(text[i])
       }
     }
-    console.log("getNumberSum", sum_number)
+    return sum_number
   },
 };
 
