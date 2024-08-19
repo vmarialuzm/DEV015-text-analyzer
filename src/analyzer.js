@@ -50,7 +50,7 @@ const analyzer = {
       sum_long_words += long_word
     }
     average_words = sum_long_words/count_words
-    return average_words.toFixed(2)
+    return parseFloat(average_words.toFixed(2))
   },
 
   getNumberCount: (text) => {
@@ -68,13 +68,11 @@ const analyzer = {
 
   getNumberSum: (text) => {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
-    let count_number = 0
     let sum_number = 0
     text = text.replaceAll(" ", "")
 
     for (let i = 0; i < text.length; i++) {
       if (!isNaN(parseInt(text[i]))) {
-        count_number += 1
         sum_number += parseInt(text[i])
       }
     }
