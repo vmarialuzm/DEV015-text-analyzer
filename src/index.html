@@ -13,28 +13,30 @@
     <h1>Analizador de texto</h1>
   </header>
 
-  <ul>
+  <section>
+    <ul>
+      <div>
+        <li class="metricas caracteres" data-testid="character-count">Caracteres: 0</li>
+        <li class="metricas sin espacios" data-testid="character-no-spaces-count">Caracteres Sin Espacios: 0</li>
+        <li class="metricas palabras" data-testid="word-count">Palabras: 0</li>
+      </div>
+      
+      <div>
+        <li class="metricas numeros" data-testid="number-count">Números: 0</li>
+        <li class="metricas sum numeros" data-testid="number-sum">Suma números: 0</li>
+        <li class="metricas promedio" data-testid="word-length-average">Promedio longitud: 0</li>
+      </div>
+    </ul>
+  
+    <textarea name="user-input"></textarea>
+  
     <div>
-      <li class="metricas caracteres" data-testid="character-count">Caracteres: 0</li>
-      <li class="metricas sin espacios" data-testid="character-no-spaces-count">Caracteres Sin Espacios: 0</li>
-      <li class="metricas palabras" data-testid="word-count">Palabras: 0</li>
+      <button id="reset-button">Limpiar métricas</button>
     </div>
-    
-    <div>
-      <li class="metricas numeros" data-testid="number-count">Números: 0</li>
-      <li class="metricas sum numeros" data-testid="number-sum">Suma números: 0</li>
-      <li class="metricas promedio" data-testid="word-length-average">Promedio longitud: 0</li>
-    </div>
-  </ul>
-
-  <textarea name="user-input"></textarea>
-
-  <div>
-    <button id="reset-button">Limpiar métricas</button>
-  </div>
+  </section>
 
   <footer>
-    <p>Luz Vivanco</p>
+    <p>Creado por Luz Vivanco © 2024</p>
   </footer>
 
   <script src="index.js" type="module"></script>

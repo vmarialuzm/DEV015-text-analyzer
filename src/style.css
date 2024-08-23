@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    font-family: ''Times New Roman', Times, serif';
+    font-family: 'Times New Roman', Times, serif;
     background-image: url("./media/letras.jpeg");
 }
 
@@ -16,10 +16,10 @@ header {
 }
 
 footer {
+    background-color: #F9ACA7;
     text-align: right;
     font-weight: bold;
-    padding: 5px;
-    margin: 20px;
+    padding: 10px;
 }
 
 ul {
@@ -68,6 +68,7 @@ textarea[name="user-input"] {
     width: 180px;
     display: block;
     background-color: #CF365F;
+    border-radius: 10px;
     transition: background-color 0.3s ease;
 }
 
